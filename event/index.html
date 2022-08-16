@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+      <h1 id="head">Hello Bangladesh</h1>
+          <button id=" color-red" onclick="colorRed()"> click me to red</button>
+          <button id="color-blue">click me to blue </button>
+         <br><br>
+         <p id="text-display"> hello</p>
+          <input id="text-input" type="text">
+           <button id="update-button"> Update</button>
+           <script>
+            document.getElementById('update-button').addEventListener('click',function()
+            {
+                const textInput = document.getElementById('text-input');
+                const text= textInput.value;
+                
+                const p =document.getElementById('text-display');
+                p.innerText=text;
+                textInput.value= "";
+            })
+           </script>
+      <script src="event.js"></script>
+</body>
+</html>
