@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-4xl text-center mt-5">Welcome to AB BANK</h1>
+     
+    <main class="mt-5">
+        <section>
+            <div class="grid grid-cols-3 w-7/12 gap-3 w-7/12 mx-auto">
+                <div  class="bg-lime-500 text-white p-10 rounded">
+                    <h1>Deposit</h1>
+                    <h2>$<span id="deposite-display">00</span> </h2>
+                </div>
+                <div class="bg-amber-500 text-white p-10 rounded">
+                    <h1>Withdrow</h1>
+                    <h2>$<span id="withdraw-display">00</span> </h2>
+                </div>
+                <div  class="bg-cyan-500 text-white p-10 rounded">
+                    <h1>Balance</h1>
+                    <h2>$<span id="balance-display">00</span></h2>
+                </div> 
+              </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-2 w-7/12 gap-3 w-7/12 mx-auto mt-10">
+                <div class="bg-violet-600 text-white p-10 rounded">
+                    <h1> please Deposit</h1>
+                    <input id="deposite-input" class="block my-2 w-10/12 text-black"  type="text" placeholder="$ amount you want to deposite">
+                    <button id="deposite" class="bg-yellow-400 p-3 text-white font-bold rounded"> deposite</button>
+                </div>
+                <div class="bg-fuchsia-400 text-white p-10 rounded">
+                    <h1> please Withdrow</h1>
+                    <input id="withdraw-input" class="block my-2 w-10/12 text-black"  type="text" placeholder="$ amount you want to withdrow">
+                    <button id="withdraw" class="bg-yellow-400 p-3 text-white font-bold rounded"> withdraw</button>
+                </div>
+               
+                
+              </div>
+        </section>
+        
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
