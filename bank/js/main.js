@@ -20,7 +20,12 @@ document.getElementById('withdraw').addEventListener('click',function()
     const withdrawDisplay = document.getElementById('withdraw-display');
     const withdrawValue= parseFloat(withdrawDisplay.innerText) ;
     withdrawDisplay.innerText= withdraw + withdrawValue;
-    const balanceDisplay= document.getElementById('balance-display');
-    balanceDisplay.innerText= total - withdraw;
+    withdrawInput.value='';
 
+    const totalBalance= document.getElementById('balance-display');
+    const totalBalanceString = totalBalance.innerText;
+    const totalBalanceNumber= parseFloat(totalBalanceString);
+    const newTotalBalance = totalBalanceNumber-withdraw;
+    totalBalance.innerText= newTotalBalance;
+    
 })
